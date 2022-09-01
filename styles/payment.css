@@ -2,6 +2,20 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Main-container */
+
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* -------- Header --------- */
 
@@ -14,8 +28,16 @@
 /* Header-Image */
 
 #Header-img {
-    width: 10rem;
-    height: 9rem;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* ------- Content ------- */
+
+.hotel_container .hotel_img {
+    width: 500px;
+    height: 500px;
 }
 
 
@@ -29,6 +51,6 @@
 }
 
 .media_img {
-    width: 2rem;
-    height: 2rem;
+    width: 22px;
+    height: 20px;
 }
