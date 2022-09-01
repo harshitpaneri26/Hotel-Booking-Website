@@ -17,7 +17,9 @@
 
             <!-- Header image -->
             <div class="Header-img">
-                <img id="Header-img" src="assests/images/logo.png " alt="logo ">
+                <a href="index.html">
+                    <img id="Header-img" src="assests/images/logo.png " alt="logo">
+                </a>
             </div>
 
             <!-- Header-content -->
@@ -25,7 +27,7 @@
 
                 <!-- Login -->
                 <div class="login">
-                    <a href="./login.html" target="_blank">Login</a>
+                    <a href="login.html">Login</a>
                 </div>
 
             </div>
@@ -49,9 +51,37 @@
 
                     <!-- Book Now -->
                     <div>
-                        <a href="/payment.html">
-                            <p>Book Now</p>
-                        </a>
+                        <form action="payment.html">
+
+                            <div>
+                                <label for="adults">Adults:</label>
+                                <input type="number" min="1" value="1" name="Adults" id="adults" required>
+                            </div>
+
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="Name" id="name" required>
+                            </div>
+
+                            <div>
+                                <label for="date1">From Date:</label>
+                                <input type="date" name="date" id="date1" required>
+                            </div>
+
+                            <div>
+                                <label for="date2">To Date:</label>
+                                <input type="date" name="date" id="date2" required>
+                            </div>
+
+                            <div>
+                                <label for="total">Total: </label>
+                                <input type="number" id="total" disabled>
+                            </div>
+
+                            <div>
+                                <button type="submit">Book</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
@@ -103,7 +133,7 @@
 
             <!-- Contact us -->
             <div>
-                <a href="/contact.html" target="_blank">Contact us</a>
+                <a href="/contact.html">Contact us</a>
             </div>
 
             <!-- Social Media -->
