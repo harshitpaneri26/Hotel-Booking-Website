@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -6,10 +9,16 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background-color: #e0e0e0;
+    font-family: "Poppins", sans-serif;
 }
 
 
 /* Main-container */
+
+header {
+    background-color: rosybrown;
+}
 
 .main-container {
     width: 100%;
@@ -41,10 +50,48 @@ body {
 }
 
 
+/* Hotel div*/
+
+.hotel {
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgb(132, 136, 139);
+}
+
+
+/* hotel-desc */
+
+.hotel-desc .customer-details {
+    margin: 2% 4% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.hotel-desc .prices {
+    margin: 2% 2% 3% 4%;
+    border: 2px solid;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+
 /* -------- Footer --------*/
 
 
 /* Social media */
+
+footer {
+    background-color: rosybrown;
+}
 
 .social_media {
     display: flex;
