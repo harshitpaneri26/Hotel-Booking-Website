@@ -1,7 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+
+
+/* -------- Header --------- */
+
+.Header {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -10,4 +16,19 @@
 #Header-img {
     width: 10rem;
     height: 9rem;
+}
+
+
+/* -------- Footer --------*/
+
+
+/* Social media */
+
+.social_media {
+    display: flex;
+}
+
+.media_img {
+    width: 2rem;
+    height: 2rem;
 }
