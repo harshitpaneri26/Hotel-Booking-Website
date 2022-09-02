@@ -18,6 +18,11 @@ body {
 
 header {
     background-color: rosybrown;
+    max-width: 100vw;
+    min-height: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .main-container {
@@ -31,6 +36,8 @@ header {
 .Header {
     display: flex;
     align-items: center;
+    padding: 0 2%;
+    justify-content: space-between;
 }
 
 
@@ -39,6 +46,15 @@ header {
 #Header-img {
     width: 60px;
     height: 60px;
+}
+
+
+/* Login option */
+
+.login a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
 
@@ -84,6 +100,19 @@ header {
 }
 
 
+/* paynow Button */
+
+.hotel-desc .pay-btn {
+    padding: 2rem;
+}
+
+.hotel-desc .pay-btn a {
+    text-decoration: none;
+    color: black;
+    f
+}
+
+
 /* -------- Footer --------*/
 
 
@@ -91,6 +120,25 @@ header {
 
 footer {
     background-color: rosybrown;
+    padding: 0 2%;
+    max-width: 100vw;
+    min-height: 3.3rem;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    bottom: 0;
+    z-index: 100;
+}
+
+
+/* contact */
+
+.footer .contact a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
 
 .social_media {
@@ -100,4 +148,16 @@ footer {
 .media_img {
     width: 22px;
     height: 20px;
+}
+
+
+/* set order */
+
+.social_media {
+    order: 1;
+}
+
+#rights_text {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
 }
