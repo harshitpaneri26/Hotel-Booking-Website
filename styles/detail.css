@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +37,7 @@ header {
 .Header {
     padding: 0 2%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -60,21 +62,94 @@ header {
 
 /* ------- Content ------- */
 
-.hotel_container .hotel_img {
-    width: 500px;
-    height: 500px;
-}
-
 
 /* Hotel_container */
 
 .hotel_container {
-    padding-left: 3%;
+    padding: 3%;
 }
 
+
+/* Hotel Book container */
+
 .hotel-img-book {
-    margin: 2% 4% 0 4%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid;
+    border-collapse: collapse;
 }
+
+
+/* Hotel Image container */
+
+.hotel_container .hotel-img {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    border: 1px solid;
+}
+
+
+/* Images */
+
+.hotel_container .hotel_img {
+    width: 500px;
+}
+
+.hotel_container .payment-form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+#form-payment {
+    margin: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* form table */
+
+#form-payment table {
+    height: 25rem;
+    width: 27rem;
+    font-size: 1.1rem;
+}
+
+#form-payment table input {
+    padding: 0.5rem;
+    width: 20em;
+    height: 1.7rem;
+    outline: none;
+    font-size: 0.9rem;
+    border-radius: 0.1rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#form-payment table button {
+    width: 6.2rem;
+    height: 2.2rem;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    border-color: rgba(80, 69, 69, 0.733);
+    cursor: pointer;
+}
+
+.Rating_,
+.amenities_,
+.desctitle_ {
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+/* Hotel description */
 
 .hotel-desc {
     margin: 1% 4% 2% 4%;
@@ -97,6 +172,7 @@ footer {
     min-height: 3.3rem;
     position: sticky;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 5rem;

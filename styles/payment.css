@@ -35,6 +35,7 @@ header {
 
 .Header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0 2%;
     justify-content: space-between;
@@ -60,27 +61,55 @@ header {
 
 /* ------- Content ------- */
 
-.hotel_container .hotel_img {
-    width: 500px;
-    height: 500px;
-}
-
 
 /* Hotel div*/
 
+.hotel_container_child {
+    margin: 5rem auto;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hotel {
-    margin: 2% auto;
+    background-color: rgb(132, 136, 139);
+    display: flex;
+}
+
+.primary_img {
+    width: 23rem;
+    height: 16rem;
+}
+
+.hotel_img {
+    width: 23rem;
+    height: 16rem;
+}
+
+.hotel .hotel_title {
+    padding: 1.2rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    width: 50%;
     align-items: flex-start;
-    justify-content: space-between;
-    background-color: rgb(132, 136, 139);
+    justify-content: center;
 }
 
 
-/* hotel-desc */
+/* =------ hotel-desc ------ */
+
+.hotel-desc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 4rem auto;
+    background-color: rosybrown;
+    border: 2px solid;
+    border-radius: 1.5rem;
+}
 
 .hotel-desc .customer-details {
     margin: 2% 4% 2% 2%;
@@ -90,8 +119,6 @@ header {
 }
 
 .hotel-desc .prices {
-    margin: 2% 2% 3% 4%;
-    border: 2px solid;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -109,7 +136,6 @@ header {
 .hotel-desc .pay-btn a {
     text-decoration: none;
     color: black;
-    f
 }
 
 
@@ -125,6 +151,7 @@ footer {
     min-height: 3.3rem;
     position: sticky;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 5rem;

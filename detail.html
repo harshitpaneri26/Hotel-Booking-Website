@@ -50,38 +50,77 @@
                     </div>
 
                     <!-- Book Now -->
-                    <div>
-                        <form action="payment.html">
+                    <div class="payment-form">
+                        <div id="form-payment">
+                            <form action="payment.html">
 
-                            <div>
-                                <label for="adults">Adults:</label>
-                                <input type="number" min="1" value="1" name="Adults" id="adults" required>
-                            </div>
 
-                            <div>
-                                <label for="name">Name:</label>
-                                <input type="text" name="Name" id="name" required>
-                            </div>
+                                <!-- table -->
+                                <table>
 
-                            <div>
-                                <label for="date1">From Date:</label>
-                                <input type="date" name="date" id="date1" required>
-                            </div>
+                                    <tr>
+                                        <td>
+                                            <label for="adults">Adults:</label>
+                                        </td>
 
-                            <div>
-                                <label for="date2">To Date:</label>
-                                <input type="date" name="date" id="date2" required>
-                            </div>
+                                        <td>
+                                            <input type="number" min="1" value="1" name="Adults" id="adults" required>
+                                        </td>
+                                    </tr>
 
-                            <div>
-                                <label for="total">Total: </label>
-                                <input type="number" id="total" disabled>
-                            </div>
+                                    <tr>
+                                        <td>
+                                            <label for="name">Name:</label>
+                                        </td>
 
-                            <div>
-                                <button type="submit">Book</button>
-                            </div>
-                        </form>
+                                        <td>
+                                            <input type="text" name="Name" id="name" required>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label for="date1">From Date:</label>
+                                        </td>
+
+                                        <td>
+                                            <input type="date" name="date" id="date1" required>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <label for="date2">To Date:</label>
+                                        </td>
+
+                                        <td>
+                                            <input type="date" name="date" id="date2" required>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <label for="total">Total: </label>
+                                        </td>
+
+                                        <td>
+                                            <input type="number" id="total" disabled>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <button type="submit" class="form-btn">Book Now</button>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </form>
+                        </div>
                     </div>
                 </div>
 
@@ -94,12 +133,12 @@
                     </div>
 
                     <div class="rating">
-                        <p>RATING</p>
+                        <h4 class="Rating_">RATING</h4>
                         <p>5 Star</p>
                     </div>
 
                     <div class="amenities">
-                        <h3>AMENITIES</h3>
+                        <h3 class="amenities_">AMENITIES</h3>
 
                         <ul class="un_list">
                             <li>Room service</li>
@@ -113,7 +152,7 @@
 
                     <div class="desc">
                         <div class="desc-title">
-                            <p> DESCRIPTION</p>
+                            <h4 class="desctitle_"> DESCRIPTION</h4>
                         </div>
 
                         <div class="desc-summary">
