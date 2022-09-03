@@ -8,8 +8,6 @@
 
 html,
 body {
-    width: 100%;
-    height: 100%;
     background-color: #e0e0e0;
     font-family: "Poppins", sans-serif;
 }
@@ -18,8 +16,8 @@ body {
 /* Main-container */
 
 .main-container {
-    width: 100%;
-    height: 100%;
+    width: 98.9vw;
+    height: 100vh;
 }
 
 
@@ -51,62 +49,86 @@ header {
 }
 
 
-/* Login option */
+/* -------Login Modal */
 
-.login a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+.modal-backdrop {
+    z-index: 0;
+    transition: 0.2s all;
+}
+
+.modal-body .login-table {
+    margin: auto;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body .login-table input {
+    padding: 0 0.2rem 0 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.modal-footer {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -----  Login Modal End */
+
+.hotels {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
 }
 
 
 /* --------- Content ------- */
 
+.container {
+    --bs-gutter-x: 0;
+}
+
 
 /* content-1 */
 
-.content .content-1_list {
-    min-height: 4rem;
+.list_container {
+    margin: 3rem;
+}
+
+.list_container>ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-}
-
-.content-1_list li {
-    list-style: none;
-}
-
-.content-1_list li a {
-    font-size: 1.1rem;
-    color: black;
-    font-weight: 600;
-    text-decoration: none;
+    gap: 1.3rem;
+    flex-wrap: wrap;
 }
 
 
 /* content-2 */
 
-.content-2 {
-    padding: 0 1rem 0 4rem;
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.content-2 .hotel {
+/* Hotel-cards */
+
+.hotel {
     background-color: lightgrey;
     height: 220px;
     max-width: 36rem;
     margin: 2%;
     display: flex;
+    transition: 0.3s all;
 }
+
+
+/* Hotel_images */
 
 .hotel .hotel_img {
     height: 220px;
     width: 17rem;
 }
+
+
+/* Hotel description */
 
 .hotel .hotel-desc {
     width: 18rem;
@@ -119,6 +141,7 @@ header {
 }
 
 #_hotelinfo {
+    width: 23rem;
     color: black;
     display: flex;
     flex-direction: column;
@@ -126,21 +149,21 @@ header {
     padding: 0.9rem;
 }
 
+.hotel:hover {
+    background-color: rosybrown;
+}
+
 
 /* map-view */
-
-#map-view {
-    display: none;
-}
 
 
 /* -------- Footer --------*/
 
 footer {
     padding: 0 2%;
-    max-width: 100vw;
+    width: 98.9vw;
     min-height: 3.3rem;
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -154,11 +177,47 @@ footer {
 
 /* contact */
 
-.footer .contact a {
-    text-decoration: none;
-    color: black;
+
+/* Contact Modal */
+
+.modal-body1 {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .para {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.modal-body1 .para p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.1px;
     font-weight: 500;
 }
+
+.modal-body1 .input_field {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.modal-body1 .input_field input {
+    width: 16rem;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+}
+
+#modal_footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+/* ------- Modal contact End ------- */
 
 
 /* Social media */
@@ -181,5 +240,8 @@ footer {
 
 #rights_text {
     margin-top: 1.2rem;
+}
+
+#rights_text>h5 {
     font-size: 0.9rem;
 }

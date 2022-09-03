@@ -18,8 +18,8 @@ body {
 
 .main-container {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 98.9vw;
+    height: 100vh;
 }
 
 
@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: rosybrown;
-    max-width: 100vw;
+    max-width: 100%;
     min-height: 1.5rem;
     position: sticky;
     top: 0;
@@ -43,12 +43,28 @@ header {
 }
 
 
-/* Login option */
+/* -------Login Modal */
 
-.login a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+.modal-backdrop {
+    z-index: 0;
+    transition: 0.2s all;
+}
+
+.modal-body .login-table {
+    margin: auto;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body .login-table input {
+    padding: 0 0.2rem 0 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.modal-footer {
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -146,15 +162,15 @@ header {
 
 .primay-img {
     position: relative;
+    user-select: none;
 }
 
 .overlay {
     position: absolute;
-    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
     width: 100%;
     height: 100%;
+    text-decoration: none;
     transition: 0.4s ease;
     opacity: 0;
     font-size: 20px;
@@ -166,8 +182,10 @@ header {
 }
 
 .primay-img:hover .overlay {
+    color: #f1f1f1;
     opacity: 1;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -191,9 +209,8 @@ header {
 
 .content3 a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.685);
-    font-size: 1.1rem;
-    font-weight: 600;
+    color: rgb(254, 254, 254);
+    font-size: 1rem;
 }
 
 
@@ -217,11 +234,47 @@ footer {
 
 /* contact */
 
-.footer .contact a {
-    text-decoration: none;
-    color: black;
+
+/* Contact Modal */
+
+.modal-body1 {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .para {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.modal-body1 .para p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.1px;
     font-weight: 500;
 }
+
+.modal-body1 .input_field {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.modal-body1 .input_field input {
+    width: 16rem;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+}
+
+#modal_footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+/* ------- Modal contact End ------- */
 
 
 /* Social media */
@@ -241,5 +294,8 @@ footer {
 
 #rights_text {
     margin-top: 1.2rem;
+}
+
+#rights_text>h5 {
     font-size: 0.9rem;
 }

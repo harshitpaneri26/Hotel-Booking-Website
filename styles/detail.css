@@ -18,8 +18,8 @@ body {
 /* Main-container */
 
 .main-container {
-    width: 100%;
-    height: 100%;
+    width: 98.9vw;
+    height: 100vh;
 }
 
 
@@ -51,13 +51,32 @@ header {
 }
 
 
-/* Login option */
+/* -------Login Modal */
 
-.login a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+.modal-backdrop {
+    z-index: 0;
+    transition: 0.2s all;
 }
+
+.modal-body .login-table {
+    margin: auto;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body .login-table input {
+    padding: 0 0.2rem 0 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.modal-footer {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -----  Login Modal End */
 
 
 /* ------- Content ------- */
@@ -74,8 +93,7 @@ header {
 
 .hotel-img-book {
     display: flex;
-    flex-wrap: wrap;
-    border: 2px solid;
+    border: 0.5px solid;
     border-collapse: collapse;
 }
 
@@ -88,22 +106,33 @@ header {
     align-items: center;
     justify-content: center;
     padding: 1.6rem;
-    border: 1px solid;
+    border-right: 0.1px solid;
 }
 
 
-/* Images */
+/* Hotel image */
 
-.hotel_container .hotel_img {
-    width: 500px;
+.figure-img {
+    width: 26rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
 }
 
 .hotel_container .payment-form {
-    width: 40%;
     display: flex;
     justify-content: center;
-    border: 1px solid;
-    border-collapse: collapse;
+    border-left: 0px solid;
+}
+
+.payment-form-hotel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-form table {
+    margin-left: 4rem;
+    width: 3rem;
 }
 
 #form-payment {
@@ -131,15 +160,6 @@ header {
     border-radius: 0.1rem;
     border: none;
     background-color: rgb(255, 255, 255);
-}
-
-#form-payment table button {
-    width: 6.2rem;
-    height: 2.2rem;
-    border-radius: 0.3rem;
-    background-color: transparent;
-    border-color: rgba(80, 69, 69, 0.733);
-    cursor: pointer;
 }
 
 .Rating_,
@@ -181,13 +201,46 @@ footer {
 }
 
 
-/* contact */
+/* Contact Modal */
 
-.footer .contact a {
-    text-decoration: none;
-    color: black;
+.modal-body1 {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .para {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.modal-body1 .para p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.1px;
     font-weight: 500;
 }
+
+.modal-body1 .input_field {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.modal-body1 .input_field input {
+    width: 16rem;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+}
+
+#modal_footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+/* ------- Modal contact End ------- */
 
 
 /* Social media */

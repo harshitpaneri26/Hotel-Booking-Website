@@ -26,8 +26,8 @@ header {
 }
 
 .main-container {
-    width: 100%;
-    height: 100%;
+    width: 98.9vw;
+    height: 100vh;
 }
 
 
@@ -50,13 +50,32 @@ header {
 }
 
 
-/* Login option */
+/* -------Login Modal */
 
-.login a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+.modal-backdrop {
+    z-index: 0;
+    transition: 0.2s all;
 }
+
+.modal-body .login-table {
+    margin: auto;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body .login-table input {
+    padding: 0 0.2rem 0 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.modal-footer {
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -----  Login Modal End */
 
 
 /* ------- Content ------- */
@@ -103,7 +122,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 4rem;
     width: 90%;
     margin: 4rem auto;
     background-color: rosybrown;
@@ -127,19 +147,49 @@ header {
 }
 
 
-/* paynow Button */
-
-.hotel-desc .pay-btn {
-    padding: 2rem;
-}
-
-.hotel-desc .pay-btn a {
-    text-decoration: none;
-    color: black;
-}
-
-
 /* -------- Footer --------*/
+
+
+/* Contact Modal */
+
+.modal-body1 {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body .para {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+
+.modal-body1 .para p {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+}
+
+.modal-body1 .input_field {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.modal-body1 .input_field input {
+    width: 16rem;
+    padding-left: 0.3rem;
+    font-size: 1rem;
+}
+
+#modal_footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+/* ------- Modal contact End ------- */
 
 
 /* Social media */
@@ -157,15 +207,6 @@ footer {
     gap: 5rem;
     bottom: 0;
     z-index: 100;
-}
-
-
-/* contact */
-
-.footer .contact a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
 }
 
 .social_media {

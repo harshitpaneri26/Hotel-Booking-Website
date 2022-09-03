@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="/styles/list.css">
     <title>List</title>
 </head>
@@ -27,7 +32,52 @@
 
                 <!-- Login -->
                 <div class="login">
-                    <a href="login.html">Login</a>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel1">Please Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <!-- Login from -->
+                                    <form action="index.html" id="login-form">
+                                        <table class="login-table">
+
+                                            <tr>
+                                                <td>Username: </td>
+                                                <td>
+                                                    <input type="text" name="Username" id="username" required placeholder="Enter Username">
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Password: </td>
+                                                <td>
+                                                    <input type="password" name="password" id="password" required placeholder="Enter Password">
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </form>
+
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-primary">
+                                        Login
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -37,148 +87,213 @@
         <!-- content -->
         <div class="content">
 
-            <div class="list content-1">
-                <ul class="content-1_list">
-                    <li>
-                        <a href="#list-view">List View</a>
-                    </li>
+            <div class="container">
 
-                    <li>
-                        <a href="#map-view">Map View</a>
-                    </li>
-                </ul>
+                <!-- List Container -->
+                <div class="list_container">
+
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">List View</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Map View</button>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Tab content -->
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- List view -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                        <div class="hotels">
+
+                            <!-- Start -->
+                            <div class="hotel" href="detail.html">
+
+                                <!-- Hotel image -->
+                                <div class="hotel-img">
+                                    <a href="/detail.html">
+                                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" class="hotel_img">
+                                    </a>
+                                </div>
+
+                                <!-- Hotel description -->
+
+                                <div class="hotel-desc" id="_hotelinfo">
+
+                                    <a href="/detail.html">
+                                        <h3>Radisson Blu Hotel</h3>
+                                    </a>
+
+                                    <a href="/detail.html">
+                                        <p>5 Star</p>
+                                    </a>
+
+                                    <a href="/detail.html">
+                                        <p>New Delhi</p>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="hotel">
+
+                                <!-- Hotel image -->
+                                <div class="hotel-img">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi" class="hotel_img">
+                                </div>
+
+                                <!-- Hotel description -->
+
+                                <div class="hotel-desc" id="_hotelinfo">
+
+                                    <h3>The Lalit New Delhi</h3>
+
+                                    <p>4.5 Star</p>
+
+                                    <p>New Delhi</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="hotel ">
+
+                                <!-- Hotel image -->
+                                <div class="hotel-img ">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg " alt="Taj Palace " class="hotel_img ">
+                                </div>
+
+                                <!-- Hotel description -->
+
+                                <div class="hotel-desc " id="_hotelinfo">
+
+                                    <h3>Taj Palace</h3>
+
+                                    <p>4.0 Star</p>
+
+                                    <p>New Delhi</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- End -->
+
+                </div>
+
+                <!-- Map view -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                    <!-- map-view -->
+                    <div class="map " id="map-view">
+
+                        <!-- Map-image -->
+                        <div class="map-img ">
+                            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png " alt="Map Image ">
+                        </div>
+
+                        <!-- description -->
+                        <div class="map-desc ">
+                            <h3>MAP VIEW</h3>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
             </div>
+        </div>
 
-            <div class="content-2" id="list-view">
+    </div>
 
-                <div class="hotel" href="detail.html">
+    <!-- Footer -->
+    <footer class="footer ">
 
-                    <!-- Hotel image -->
-                    <div class="hotel-img">
-                        <a href="/detail.html">
-                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel" class="hotel_img">
-                        </a>
+
+        <!-- Contact us -->
+        <div class="contact">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Contact us</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Get in touch</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body1">
+
+                            <div class="para">
+                                <p>Thank you for reaching out!!!</p>
+                                <p>please enter your email and we will get back to you.</p>
+                            </div>
+
+                            <div class="input_field">
+
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" required placeholder="Enter your email id">
+
+                            </div>
+                        </div>
+                        <div class="modal-footer" id="modal_footer">
+
+                            <button type="button" class="btn btn-primary"> Submit </button>
+
+                        </div>
                     </div>
-
-                    <!-- Hotel description -->
-
-                    <div class="hotel-desc" id="_hotelinfo">
-
-                        <a href="/detail.html">
-                            <h3>Radisson Blu Hotel</h3>
-                        </a>
-
-                        <a href="/detail.html">
-                            <p>5 Star</p>
-                        </a>
-
-                        <a href="/detail.html">
-                            <p>New Delhi</p>
-                        </a>
-
-                    </div>
-
                 </div>
-
-
-                <div class="hotel">
-
-                    <!-- Hotel image -->
-                    <div class="hotel-img">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The Lalit New Delhi" class="hotel_img">
-                    </div>
-
-                    <!-- Hotel description -->
-
-                    <div class="hotel-desc" id="_hotelinfo">
-
-                        <h3>The Lalit New Delhi</h3>
-
-                        <p>4.5 Star</p>
-
-                        <p>New Delhi</p>
-                    </div>
-
-                </div>
-
-
-                <div class="hotel ">
-
-                    <!-- Hotel image -->
-                    <div class="hotel-img ">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg " alt="Taj Palace " class="hotel_img ">
-                    </div>
-
-                    <!-- Hotel description -->
-
-                    <div class="hotel-desc " id="_hotelinfo">
-
-                        <h3>Taj Palace</h3>
-
-                        <p>4.0 Star</p>
-
-                        <p>New Delhi</p>
-
-                    </div>
-
-                </div>
-
-                <!-- map-view -->
-                <div class="map " id="map-view">
-
-                    <!-- Map-image -->
-                    <div class="map-img ">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png " alt="Map Image ">
-                    </div>
-
-                    <!-- description -->
-                    <div class="map-desc ">
-                        <h3>MAP VIEW</h3>
-                    </div>
-
-                </div>
-
-
             </div>
 
         </div>
 
-        <!-- Footer -->
-        <footer class="footer ">
+        <!-- Social Media -->
+        <div class="social_media ">
+
+            <a href="https://www.instagram.com " target="_blank ">
+                <img src="assests/images/instagram.png " alt="instagram " class="media_img ">
+            </a>
+
+            <a href="https://www.facebook.com " target="_blank ">
+
+                <img src="assests/images/facebook.png " alt="facebook " class="media_img ">
+            </a>
+
+            <a href="https://twitter.com " target="_blank ">
+
+                <img src="assests/images/twitter.png " alt="twitter " class="media_img ">
+            </a>
+
+        </div>
 
 
-            <!-- Contact us -->
-            <div class="contact ">
-                <a href="/contact.html ">Contact us</a>
-            </div>
-
-            <!-- Social Media -->
-            <div class="social_media ">
-
-                <a href="https://www.instagram.com " target="_blank ">
-                    <img src="assests/images/instagram.png " alt="instagram " class="media_img ">
-                </a>
-
-                <a href="https://www.facebook.com " target="_blank ">
-
-                    <img src="assests/images/facebook.png " alt="facebook " class="media_img ">
-                </a>
-
-                <a href="https://twitter.com " target="_blank ">
-
-                    <img src="assests/images/twitter.png " alt="twitter " class="media_img ">
-                </a>
-
-            </div>
-
-
-            <!-- CopyRights -->
-            <div id="rights_text ">
-                <h5>&copy; 2022 ROOM SEARCH PVT. LTD.</h5>
-            </div>
-        </footer>
+        <!-- CopyRights -->
+        <div id="rights_text">
+            <h5>&copy; 2022 ROOM SEARCH PVT. LTD.</h5>
+        </div>
+    </footer>
 
     </div>
+
+    <!-- script file's -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
 
 </html>
