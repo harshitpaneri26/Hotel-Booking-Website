@@ -25,21 +25,18 @@ body {
 
 /* -------- Header --------- */
 
-header {
-    background-color: rosybrown;
-    max-width: 100vw;
+.Header {
     min-height: 1.5rem;
+    max-width: 100%;
     position: sticky;
     top: 0;
-    z-index: 100;
-}
-
-.Header {
     padding: 0 2%;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background-color: rosybrown;
 }
 
 
@@ -112,10 +109,9 @@ header {
 
 /* Hotel image */
 
-.figure-img {
-    width: 26rem;
-    margin-bottom: 0.5rem;
-    line-height: 1;
+.image_hotel {
+    width: 28vmax;
+    height: 20vmax;
 }
 
 .hotel_container .payment-form {
@@ -140,6 +136,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* carousel */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: brightness(10);
+    height: 2.5rem;
+    width: 2.5rem;
 }
 
 
@@ -169,10 +175,21 @@ header {
 }
 
 
+/* Rating star */
+
+.fa {
+    font-size: 19px;
+}
+
+.checked {
+    color: orange;
+}
+
+
 /* Hotel description */
 
 .hotel-desc {
-    margin: 1% 4% 2% 4%;
+    margin: 2% 4% 2% 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -186,18 +203,17 @@ header {
 /* -------- Footer --------*/
 
 footer {
-    background-color: rosybrown;
     padding: 0 2%;
     max-width: 100vw;
     min-height: 3.3rem;
     position: sticky;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 5rem;
+    flex-wrap: wrap;
     bottom: 0;
     z-index: 100;
+    background-color: rosybrown;
 }
 
 
@@ -264,4 +280,141 @@ footer {
 #rights_text {
     margin-top: 1.2rem;
     font-size: 0.9rem;
+}
+
+
+/*------------------------------- Media Queries------------------------ */
+
+
+/* Small Screen */
+
+@media only screen and (min-width: 0px) and (max-width: 750px) {
+    .hotel_container {
+        overflow: hidden;
+    }
+    .hotel-img-book {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 0.5px solid;
+        border-collapse: collapse;
+    }
+    .hotel_container .hotel-img {
+        border: none;
+        width: 100%;
+        padding: 0.8rem 0;
+    }
+    /* Hotel image */
+    .image_hotel {
+        width: 100%;
+        height: 19rem;
+    }
+    /* Payment form */
+    .hotel_container .payment-form {
+        display: flex;
+        justify-content: center;
+        border-left: 0px solid;
+    }
+    .payment-form-hotel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .payment-form table {
+        margin-left: 4rem;
+        width: 3rem;
+    }
+    #form-payment {
+        padding-left: 12vmax;
+        margin: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        filter: brightness(10);
+    }
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        --bs-gutter-x: 1.5rem;
+        /* --bs-gutter-y: 0; */
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        margin-right: auto;
+        /* margin-left: 0; */
+    }
+    /* form table */
+    #form-payment table {
+        font-size: 0.6rem;
+    }
+    #form-payment table label {
+        font-size: 0.9rem;
+    }
+    #form-payment table input {
+        width: 10rem;
+        margin: 0;
+        height: 1.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Medium Screen */
+
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+    .image_hotel {
+        width: 100%;
+        height: 19rem;
+    }
+    .hotel_container .hotel-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem;
+        border-right: 0.1px solid;
+    }
+    #form-payment {
+        margin: -11.3rem;
+    }
+    /* form table */
+    #form-payment table {
+        height: 19rem;
+        width: 19rem;
+        font-size: 2vmax;
+    }
+    #form-payment table label {
+        font-size: 0.9rem;
+    }
+    #form-payment table input {
+        width: 10rem;
+        margin: 0;
+        height: 1.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Large Screen */
+
+@media only screen and (min-width: 980px) and (max-width: 2400px) {
+    .image_hotel {
+        width: 100%;
+        height: 19rem;
+    }
+    .hotel_container .hotel-img {
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem;
+        border-right: 0.1px solid;
+    }
 }

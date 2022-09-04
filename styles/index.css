@@ -25,21 +25,18 @@ body {
 
 /* -------- Header --------- */
 
-header {
-    background-color: rosybrown;
-    max-width: 100%;
+.Header {
     min-height: 1.5rem;
+    max-width: 100%;
     position: sticky;
     top: 0;
-    z-index: 100;
-}
-
-.Header {
     padding: 0 2%;
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    background-color: rosybrown;
 }
 
 
@@ -131,6 +128,7 @@ header {
 .content2 .content2_images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 
@@ -225,7 +223,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 5rem;
     bottom: 0;
     z-index: 100;
     background-color: rosybrown;
@@ -298,4 +295,27 @@ footer {
 
 #rights_text>h5 {
     font-size: 0.9rem;
+}
+
+
+/*---------------------------- Media Queries ---------------------------*/
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+    .content .content1 {
+        background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 28rem;
+    }
+    .content1 #search {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+        width: 16rem;
+        border: none;
+        height: 2.5rem;
+        background-color: #f1f1f1;
+        border-radius: 1rem;
+        outline: none;
+    }
 }

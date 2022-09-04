@@ -9,8 +9,18 @@
     <!-- Bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Responsive css file -->
+    <link rel="stylesheet" href="/styles/common.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/list.css">
+
+
     <title>List</title>
 </head>
 
@@ -105,7 +115,7 @@
 
 
                 <!-- Tab content -->
-                <div class="tab-content" id="pills-tabContent">
+                <div class="tab-content" id="pills-tabContent" class="container-fluid">
 
                     <!-- List view -->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -124,14 +134,20 @@
 
                                 <!-- Hotel description -->
 
-                                <div class="hotel-desc" id="_hotelinfo">
+                                <div class="hotel-desc" id="_hotelinfo1">
 
                                     <a href="/detail.html">
                                         <h3>Radisson Blu Hotel</h3>
                                     </a>
 
                                     <a href="/detail.html">
-                                        <p>5 Star</p>
+                                        <div class="rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                        </div>
                                     </a>
 
                                     <a href="/detail.html">
@@ -156,7 +172,15 @@
 
                                     <h3>The Lalit New Delhi</h3>
 
-                                    <p>4.5 Star</p>
+                                    <p>
+                                        <div class="rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star fa-star-half-full checked "></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </p>
 
                                     <p>New Delhi</p>
                                 </div>
@@ -177,7 +201,15 @@
 
                                     <h3>Taj Palace</h3>
 
-                                    <p>4.0 Star</p>
+                                    <p>
+                                        <div class="rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                    </p>
 
                                     <p>New Delhi</p>
 
@@ -192,33 +224,33 @@
                 </div>
 
                 <!-- Map view -->
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" class="container-fluid">
 
                     <!-- map-view -->
-                    <div class="map " id="map-view">
+                    <div class="map" id="map-view">
 
                         <!-- Map-image -->
-                        <div class="map-img ">
-                            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png " alt="Map Image ">
+                        <div class="map-img">
+                            <img id="map_image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map Image ">
                         </div>
 
                         <!-- description -->
-                        <div class="map-desc ">
-                            <h3>MAP VIEW</h3>
-                        </div>
-
+                        <!-- <div class="map-desc "> -->
+                        <!-- <h3>MAP VIEW</h3> -->
                     </div>
-
 
                 </div>
 
+
             </div>
+
         </div>
+    </div>
 
     </div>
 
     <!-- Footer -->
-    <footer class="footer ">
+    <footer class="footer">
 
 
         <!-- Contact us -->
@@ -262,20 +294,20 @@
         </div>
 
         <!-- Social Media -->
-        <div class="social_media ">
+        <div class="social_media">
 
-            <a href="https://www.instagram.com " target="_blank ">
-                <img src="assests/images/instagram.png " alt="instagram " class="media_img ">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="assests/images/instagram.png " alt="instagram" class="media_img">
             </a>
 
-            <a href="https://www.facebook.com " target="_blank ">
+            <a href="https://www.facebook.com" target="_blank">
 
-                <img src="assests/images/facebook.png " alt="facebook " class="media_img ">
+                <img src="assests/images/facebook.png" alt="facebook" class="media_img ">
             </a>
 
-            <a href="https://twitter.com " target="_blank ">
+            <a href="https://twitter.com" target="_blank">
 
-                <img src="assests/images/twitter.png " alt="twitter " class="media_img ">
+                <img src="assests/images/twitter.png" alt="twitter" class="media_img ">
             </a>
 
         </div>
@@ -285,6 +317,7 @@
         <div id="rights_text">
             <h5>&copy; 2022 ROOM SEARCH PVT. LTD.</h5>
         </div>
+
     </footer>
 
     </div>
