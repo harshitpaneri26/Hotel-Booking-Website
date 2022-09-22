@@ -14,11 +14,9 @@
         width: 100vw;
         position: fixed;
         top: 0;
-        z-index: 10;
+        z-index: 1;
     }
     .footer {
-        position: sticky;
-        bottom: 0;
         width: 100vw;
         padding: 11px 25px;
         display: flex;
@@ -26,5 +24,15 @@
         align-items: flex-start;
         z-index: 100;
         background-color: rosybrown;
+    }
+}
+
+
+/* medium Screen*/
+
+@media only screen and (min-width: 560px) and (max-width: 2000px) {
+    .Header {
+        position: sticky;
+        top: 0;
     }
 }

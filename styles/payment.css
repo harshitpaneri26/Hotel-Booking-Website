@@ -30,7 +30,7 @@ body {
     position: sticky;
     top: 0;
     padding: 0 2%;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -91,6 +91,7 @@ body {
 .hotel {
     background-color: rgb(132, 136, 139);
     display: flex;
+    overflow: hidden;
 }
 
 .primary_img {
@@ -233,7 +234,6 @@ footer {
     .hotel {
         width: 34rem;
         border: 2px solid;
-        padding: 1rem;
         background-color: rgb(132, 136, 139);
         display: flex;
         flex-wrap: wrap;
@@ -247,12 +247,12 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-start;
-        width: 90%;
+        width: 100%;
         margin: 4rem auto;
         background-color: rosybrown;
         border: 2px solid;
         border-radius: 1.5rem;
-        padding: 2rem;
+        padding: 1.5rem;
     }
     .hotel-desc .prices {
         display: flex;
@@ -264,5 +264,17 @@ footer {
         margin: 2% 0 0 0;
         display: flex;
         flex-direction: column;
+    }
+    /* Hotel Images */
+    .hotel_img {
+        width: 100%;
+        height: 16rem;
+    }
+    .hotel_container_child {
+        margin: 2rem auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
